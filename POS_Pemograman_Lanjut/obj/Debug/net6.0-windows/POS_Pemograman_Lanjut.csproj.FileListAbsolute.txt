@@ -68,3 +68,4 @@ E:\PROGRAMMING\TUGAS KULIAH\pos\pos-c-\POS_Pemograman_Lanjut\obj\Debug\net6.0-wi
 E:\PROGRAMMING\TUGAS KULIAH\pos\pos-c-\POS_Pemograman_Lanjut\obj\Debug\net6.0-windows\POS_Pemograman_Lanjut.pdb
 E:\PROGRAMMING\TUGAS KULIAH\pos\pos-c-\POS_Pemograman_Lanjut\obj\Debug\net6.0-windows\POS_Pemograman_Lanjut.genruntimeconfig.cache
 E:\PROGRAMMING\TUGAS KULIAH\pos\pos-c-\POS_Pemograman_Lanjut\obj\Debug\net6.0-windows\ref\POS_Pemograman_Lanjut.dll
+C:\Users\mzibr\source\repos\POS_Pemograman_Lanjut\POS_Pemograman_Lanjut\obj\Debug\net6.0-windows\POS_Pemograman_Lanjut.Form_Transaksi.resources

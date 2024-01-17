@@ -148,23 +148,31 @@ namespace POS_Pemograman_Lanjut
             DateTime dt = DateTime.Now;
 
 
+            if (stokOut > stokBrg)
+            {
+                MessageBox.Show("stok keluar tidak boleh melebihi stok barang");
+            }
+            else
+            {
+                int newStok = stokBrg - stokOut;
+
+                //UPDATE STOK
+
+                string txtquery = "update product set stok = '" + newStok + "' where id = '" + idBrg + "'";
+                ExecuteQuery(txtquery);
 
 
-            int newStok = stokBrg - stokOut;
+                //INSERT 
+                string txtQuery2 = "insert into outcoming_table (id, product_id, number_of_item, created_date) values('" + id_msk + "','" + idBrg + "', '" + stokOut + "','" + dt + "')";
+                ExecuteQuery(txtQuery2);
 
-            //UPDATE STOK
+                MessageBox.Show("Berhasil mengeluarkan stok");
 
-            string txtquery = "update product set stok = '" + newStok + "' where id = '" + idBrg + "'";
-            ExecuteQuery(txtquery);
+                loadData();
+            }
 
 
-            //INSERT 
-            string txtQuery2 = "insert into outcoming_table (id, product_id, number_of_item, created_date) values('" + id_msk + "','" + idBrg + "', '" + stokOut + "','" + dt + "')";
-            ExecuteQuery(txtQuery2);
-
-            MessageBox.Show("Berhasil mengeluarkan stok");
-
-            loadData();
+          
         }
     }
 }
