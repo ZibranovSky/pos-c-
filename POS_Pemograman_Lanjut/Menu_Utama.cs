@@ -25,5 +25,10 @@ namespace POS_Pemograman_Lanjut
             form_brg_out formBrgOut = new form_brg_out();
             formBrgOut.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

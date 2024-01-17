@@ -59,7 +59,7 @@ namespace POS_Pemograman_Lanjut
                 {
                     int idBrg = myReader.GetInt32(0);
                     string nmBrg = myReader.GetString(1);
-                    cb_brg.Items.Add(idBrg + " - " + nmBrg);
+                    cb_brg.Items.Add(idBrg);
                 }
             }
             catch (Exception ex)
@@ -102,7 +102,7 @@ namespace POS_Pemograman_Lanjut
 
         private void cb_brg_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string sql = "select * from product";
+            string sql = "select * from product where id='" + cb_brg.Text + "'";
             ExecuteQuery(sql);
             SQLiteDataReader myReader;
 
@@ -116,8 +116,10 @@ namespace POS_Pemograman_Lanjut
                     string nmBrg = myReader.GetString(1);
                     int stokBrg = myReader.GetInt32(2);
 
+
                     tid_brg.Text = idBrg.ToString();
                     tnm_brg.Text = nmBrg.ToString();
+                    tbarang_1.Text = nmBrg.ToString();
                     tstok.Text = stokBrg.ToString();
 
                 }

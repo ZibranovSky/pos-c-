@@ -45,15 +45,16 @@
             tid_brg = new TextBox();
             label7 = new Label();
             tid_msk = new TextBox();
+            tbarang_1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgv1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(311, 21);
+            label1.Location = new Point(272, 16);
             label1.Name = "label1";
-            label1.Size = new Size(122, 20);
+            label1.Size = new Size(97, 15);
             label1.TabIndex = 0;
             label1.Text = "BARANG MASUK";
             label1.Click += label1_Click;
@@ -61,9 +62,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(45, 118);
+            label2.Location = new Point(39, 88);
             label2.Name = "label2";
-            label2.Size = new Size(56, 20);
+            label2.Size = new Size(44, 15);
             label2.TabIndex = 1;
             label2.Text = "Barang";
             label2.Click += label2_Click;
@@ -71,18 +72,19 @@
             // cb_brg
             // 
             cb_brg.FormattingEnabled = true;
-            cb_brg.Location = new Point(171, 110);
+            cb_brg.Location = new Point(150, 80);
+            cb_brg.Margin = new Padding(3, 2, 3, 2);
             cb_brg.Name = "cb_brg";
-            cb_brg.Size = new Size(218, 28);
+            cb_brg.Size = new Size(70, 23);
             cb_brg.TabIndex = 2;
             cb_brg.SelectedIndexChanged += cb_brg_SelectedIndexChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(45, 191);
+            label3.Location = new Point(39, 143);
             label3.Name = "label3";
-            label3.Size = new Size(100, 20);
+            label3.Size = new Size(79, 15);
             label3.TabIndex = 3;
             label3.Text = "Nama Barang";
             label3.Click += label3_Click;
@@ -90,65 +92,70 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(45, 231);
+            label4.Location = new Point(39, 173);
             label4.Name = "label4";
-            label4.Size = new Size(38, 20);
+            label4.Size = new Size(30, 15);
             label4.TabIndex = 4;
             label4.Text = "Stok";
             label4.Click += label4_Click;
             // 
             // tnm_brg
             // 
-            tnm_brg.Location = new Point(171, 188);
+            tnm_brg.Location = new Point(150, 141);
+            tnm_brg.Margin = new Padding(3, 2, 3, 2);
             tnm_brg.Name = "tnm_brg";
             tnm_brg.ReadOnly = true;
-            tnm_brg.Size = new Size(218, 27);
+            tnm_brg.Size = new Size(191, 23);
             tnm_brg.TabIndex = 5;
             tnm_brg.TextChanged += tnm_brg_TextChanged;
             // 
             // tstok
             // 
-            tstok.Location = new Point(171, 224);
+            tstok.Location = new Point(150, 168);
+            tstok.Margin = new Padding(3, 2, 3, 2);
             tstok.Name = "tstok";
             tstok.ReadOnly = true;
-            tstok.Size = new Size(218, 27);
+            tstok.Size = new Size(191, 23);
             tstok.TabIndex = 6;
             tstok.TextChanged += tstok_TextChanged;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(45, 274);
+            label5.Location = new Point(39, 206);
             label5.Name = "label5";
-            label5.Size = new Size(84, 20);
+            label5.Size = new Size(68, 15);
             label5.TabIndex = 7;
             label5.Text = "Stok Masuk";
             label5.Click += label5_Click;
             // 
             // tstok_msk
             // 
-            tstok_msk.Location = new Point(171, 267);
+            tstok_msk.Location = new Point(150, 200);
+            tstok_msk.Margin = new Padding(3, 2, 3, 2);
             tstok_msk.Name = "tstok_msk";
-            tstok_msk.Size = new Size(218, 27);
+            tstok_msk.Size = new Size(191, 23);
             tstok_msk.TabIndex = 8;
             tstok_msk.TextChanged += tstok_msk_TextChanged;
             // 
             // dgv1
             // 
             dgv1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv1.Location = new Point(45, 348);
+            dgv1.Location = new Point(39, 261);
+            dgv1.Margin = new Padding(3, 2, 3, 2);
             dgv1.Name = "dgv1";
             dgv1.RowHeadersWidth = 51;
             dgv1.RowTemplate.Height = 29;
-            dgv1.Size = new Size(591, 188);
+            dgv1.Size = new Size(517, 141);
             dgv1.TabIndex = 9;
             dgv1.CellContentClick += dgv1_CellContentClick;
             // 
             // button1
             // 
-            button1.Location = new Point(444, 71);
+            button1.Location = new Point(388, 53);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(82, 22);
             button1.TabIndex = 10;
             button1.Text = "Tambah";
             button1.UseVisualStyleBackColor = true;
@@ -156,9 +163,10 @@
             // 
             // button3
             // 
-            button3.Location = new Point(444, 118);
+            button3.Location = new Point(388, 88);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(82, 22);
             button3.TabIndex = 12;
             button3.Text = "Hapus";
             button3.UseVisualStyleBackColor = true;
@@ -166,9 +174,10 @@
             // 
             // button4
             // 
-            button4.Location = new Point(444, 156);
+            button4.Location = new Point(388, 117);
+            button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Size = new Size(94, 29);
+            button4.Size = new Size(82, 22);
             button4.TabIndex = 13;
             button4.Text = "Batal";
             button4.UseVisualStyleBackColor = true;
@@ -177,44 +186,54 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(45, 156);
+            label6.Location = new Point(39, 117);
             label6.Name = "label6";
-            label6.Size = new Size(75, 20);
+            label6.Size = new Size(58, 15);
             label6.TabIndex = 14;
             label6.Text = "ID Barang";
             label6.Click += label6_Click;
             // 
             // tid_brg
             // 
-            tid_brg.Location = new Point(171, 149);
+            tid_brg.Location = new Point(150, 112);
+            tid_brg.Margin = new Padding(3, 2, 3, 2);
             tid_brg.Name = "tid_brg";
             tid_brg.ReadOnly = true;
-            tid_brg.Size = new Size(218, 27);
+            tid_brg.Size = new Size(191, 23);
             tid_brg.TabIndex = 15;
             tid_brg.TextChanged += tid_brg_TextChanged;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(45, 71);
+            label7.Location = new Point(39, 53);
             label7.Name = "label7";
-            label7.Size = new Size(24, 20);
+            label7.Size = new Size(18, 15);
             label7.TabIndex = 16;
             label7.Text = "ID";
             // 
             // tid_msk
             // 
-            tid_msk.Location = new Point(171, 68);
+            tid_msk.Location = new Point(150, 51);
+            tid_msk.Margin = new Padding(3, 2, 3, 2);
             tid_msk.Name = "tid_msk";
-            tid_msk.Size = new Size(125, 27);
+            tid_msk.Size = new Size(110, 23);
             tid_msk.TabIndex = 17;
             tid_msk.TextChanged += tid_msk_TextChanged;
             // 
+            // tbarang_1
+            // 
+            tbarang_1.Location = new Point(226, 80);
+            tbarang_1.Name = "tbarang_1";
+            tbarang_1.Size = new Size(115, 23);
+            tbarang_1.TabIndex = 18;
+            // 
             // form_brg_msk
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(674, 584);
+            ClientSize = new Size(590, 438);
+            Controls.Add(tbarang_1);
             Controls.Add(tid_msk);
             Controls.Add(label7);
             Controls.Add(tid_brg);
@@ -232,6 +251,7 @@
             Controls.Add(cb_brg);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "form_brg_msk";
             Text = "Barang Masuk";
             Load += form_brg_msk_Load;
@@ -259,5 +279,6 @@
         private TextBox tid_brg;
         private Label label7;
         private TextBox tid_msk;
+        private TextBox tbarang_1;
     }
 }

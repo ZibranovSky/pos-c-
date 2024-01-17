@@ -64,8 +64,7 @@ namespace POS_Pemograman_Lanjut
         private void button4_Click(object sender, EventArgs e)
         {
             tid.Text = string.Empty;
-            tnm_brg.Text = string.Empty;
-            tstok.Text = string.Empty;
+            tnm_brg.Text = string.Empty; 
             tharga.Text = string.Empty;
 
         }
@@ -79,8 +78,9 @@ namespace POS_Pemograman_Lanjut
         {
             var dateTime = DateTime.Now;
             var date = DateOnly.FromDateTime(dateTime);
-            string txtQuery = "insert into product (id, name, stok, price, created_date, updated_date) values('" + tid.Text + "','" + tnm_brg.Text + "','" + tstok.Text + "','" + tharga.Text + "','"+ dateTime + "','')";
+            string txtQuery = "insert into product (id, name, stok, price, created_date, updated_date) values('" + tid.Text + "','" + tnm_brg.Text + "','0','" + tharga.Text + "','" + dateTime + "','')";
             ExecuteQuery(txtQuery);
+            MessageBox.Show("Berhasil menambahkan barang");
             LoadData();
         }
 
@@ -90,8 +90,7 @@ namespace POS_Pemograman_Lanjut
             {
                 DataGridViewRow row = dgv1.Rows[e.RowIndex];
                 tid.Text = row.Cells[0].Value.ToString();
-                tnm_brg.Text = row.Cells[1].Value.ToString();
-                tstok.Text = row.Cells[2].Value.ToString();
+                tnm_brg.Text = row.Cells[1].Value.ToString(); 
                 tharga.Text = row.Cells[3].Value.ToString();
             }
         }
@@ -99,19 +98,18 @@ namespace POS_Pemograman_Lanjut
         private void button2_Click(object sender, EventArgs e)
         {
             string id = tid.Text;
-            string txtQuery = "delete from product where id_brg = '" + id + "'";
+            string txtQuery = "delete from product where id = '" + id + "'";
             ExecuteQuery(txtQuery);
             LoadData();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
             string strId = tid.Text;
-            string strNama = tnm_brg.Text;
-            string strStok = tstok.Text;
+            string strNama = tnm_brg.Text; 
             string strHarga = tharga.Text;
-            string txtquery = "update product set nm_brg = '" + strNama + "', stok =  '"+strStok+"', harga = '"+strHarga+"' where id_brg = '" + strId + "'";
+            string txtquery = "update product set name = '" + strNama + "', price = '" + strHarga + "' where id = '" + strId + "'";
             ExecuteQuery(txtquery);
             LoadData();
         }
