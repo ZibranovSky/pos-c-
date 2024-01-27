@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mzibr\\source\\repos\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut.csproj": {}
+    "E:\\PROGRAMMING\\TUGAS KULIAH\\pos\\pos-c-\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mzibr\\source\\repos\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut.csproj": {
+    "E:\\PROGRAMMING\\TUGAS KULIAH\\pos\\pos-c-\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mzibr\\source\\repos\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut.csproj",
+        "projectUniqueName": "E:\\PROGRAMMING\\TUGAS KULIAH\\pos\\pos-c-\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut.csproj",
         "projectName": "POS_Pemograman_Lanjut",
-        "projectPath": "C:\\Users\\mzibr\\source\\repos\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut.csproj",
-        "packagesPath": "C:\\Users\\mzibr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mzibr\\source\\repos\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut\\obj\\",
+        "projectPath": "E:\\PROGRAMMING\\TUGAS KULIAH\\pos\\pos-c-\\POS_Pemograman_Lanjut\\POS_Pemograman_Lanjut.csproj",
+        "packagesPath": "C:\\Users\\NOC\\.nuget\\packages\\",
+        "outputPath": "E:\\PROGRAMMING\\TUGAS KULIAH\\pos\\pos-c-\\POS_Pemograman_Lanjut\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mzibr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NOC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

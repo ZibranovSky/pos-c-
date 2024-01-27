@@ -220,6 +220,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(600, 412);
             Controls.Add(tbarang_1);
             Controls.Add(label7);

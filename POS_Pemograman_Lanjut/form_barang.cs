@@ -64,7 +64,7 @@ namespace POS_Pemograman_Lanjut
         private void button4_Click(object sender, EventArgs e)
         {
             tid.Text = string.Empty;
-            tnm_brg.Text = string.Empty; 
+            tnm_brg.Text = string.Empty;
             tharga.Text = string.Empty;
 
         }
@@ -90,7 +90,7 @@ namespace POS_Pemograman_Lanjut
             {
                 DataGridViewRow row = dgv1.Rows[e.RowIndex];
                 tid.Text = row.Cells[0].Value.ToString();
-                tnm_brg.Text = row.Cells[1].Value.ToString(); 
+                tnm_brg.Text = row.Cells[1].Value.ToString();
                 tharga.Text = row.Cells[3].Value.ToString();
             }
         }
@@ -107,7 +107,7 @@ namespace POS_Pemograman_Lanjut
         {
 
             string strId = tid.Text;
-            string strNama = tnm_brg.Text; 
+            string strNama = tnm_brg.Text;
             string strHarga = tharga.Text;
             string txtquery = "update product set name = '" + strNama + "', price = '" + strHarga + "' where id = '" + strId + "'";
             ExecuteQuery(txtquery);

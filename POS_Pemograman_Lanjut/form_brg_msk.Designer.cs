@@ -75,7 +75,7 @@
             cb_brg.Location = new Point(150, 80);
             cb_brg.Margin = new Padding(3, 2, 3, 2);
             cb_brg.Name = "cb_brg";
-            cb_brg.Size = new Size(70, 23);
+            cb_brg.Size = new Size(110, 23);
             cb_brg.TabIndex = 2;
             cb_brg.SelectedIndexChanged += cb_brg_SelectedIndexChanged;
             // 
@@ -223,15 +223,16 @@
             // 
             // tbarang_1
             // 
-            tbarang_1.Location = new Point(226, 80);
+            tbarang_1.Location = new Point(266, 80);
             tbarang_1.Name = "tbarang_1";
-            tbarang_1.Size = new Size(115, 23);
+            tbarang_1.Size = new Size(75, 23);
             tbarang_1.TabIndex = 18;
             // 
             // form_brg_msk
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(590, 438);
             Controls.Add(tbarang_1);
             Controls.Add(tid_msk);

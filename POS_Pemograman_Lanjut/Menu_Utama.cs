@@ -30,5 +30,28 @@ namespace POS_Pemograman_Lanjut
         {
 
         }
+
+        private void barangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void barangToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            form_barang formBrg = new form_barang();
+            formBrg.Show();
+        }
+
+        private void barangMasukToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form_brg_msk formBrgMsk = new form_brg_msk();
+            formBrgMsk.Show();
+        }
+
+        private void barangKeluarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form_brg_out formBrgOut = new form_brg_out();
+            formBrgOut.Show();
+        }
     }
 }

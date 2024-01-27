@@ -95,6 +95,7 @@
             // 
             // button2
             // 
+            button2.FlatAppearance.BorderColor = Color.Red;
             button2.Location = new Point(530, 69);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
@@ -163,6 +164,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(700, 338);
             Controls.Add(tharga);
             Controls.Add(tnm_brg);

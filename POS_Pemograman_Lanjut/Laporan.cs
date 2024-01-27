@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace POS_Pemograman_Lanjut
 {
-    public partial class Form_Transaksi : Form
+    public partial class Laporan : Form
     {
-        public Form_Transaksi()
+        public Laporan()
         {
             InitializeComponent();
         }

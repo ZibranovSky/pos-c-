@@ -109,9 +109,9 @@ namespace POS_Pemograman_Lanjut
 
         private void cb_brg_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
 
-            string sql = "select * from product where id ='"+cb_brg.Text+"'";
+
+            string sql = "select * from product where id ='" + cb_brg.Text + "'";
             ExecuteQuery(sql);
             SQLiteDataReader myReader;
 
